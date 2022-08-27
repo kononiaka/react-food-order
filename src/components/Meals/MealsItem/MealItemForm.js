@@ -3,10 +3,10 @@ import classes from './MealItemForm.module.css';
 
 const MealItemForm = (props) => {
     return (
-        <div className={classes.form}>
+        <form className={classes.form}>
             <Input
                 label="Amount" input={{
-                    id: "amount",
+                    id: "amount_" + props.id,
                     type: "number",
                     min: "1",
                     max: "5",
@@ -14,7 +14,7 @@ const MealItemForm = (props) => {
                     defaultValue: "1"
                 }} />
             <button>+ Add</button>
-        </div>
+        </form>
     );
 };
 

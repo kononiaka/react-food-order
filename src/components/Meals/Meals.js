@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import ActiveMeals from './ActiveMeals';
+import AvailableMeals from './AvailableMeals';
 import MealsSummary from './MealsSummary';
 
 
@@ -8,7 +8,7 @@ const Meals = () => {
     return (
         <Fragment>
             <MealsSummary />
-            <ActiveMeals />
+            <AvailableMeals />
         </Fragment>
     );
 };
